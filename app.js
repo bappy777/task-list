@@ -133,9 +133,6 @@ function removeTasksFromLocalStorage(taskItemValue) {
 
 // clearTasks function
 function clearTasks(e) {
-    if(inputTask.value === '') {
-        alert('There Is No Task To Clear');   
-    }
     while (collection.firstChild) {
         collection.removeChild(collection.firstChild);
     }
