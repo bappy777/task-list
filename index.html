@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TodoApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title">
+                            Task List (Created By Bappy)
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <form id="form" class="input-field">
+                                    <input type="text" id="inputTask">
+                                    <label for="inputTask">New Task</label>
+                                    <br><br>
+                                    <input type="submit" value="Add Task" class="btn">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="input-field">
+                                    <input type="text" id="filter">
+                                    <label for="filter">Filter</label>
+                                </div>
+                            </div>
+                            <ul class="collection"></ul>
+                        </div>
+                        <a href="#" class="btn black" id="clear-tasks">Clear Tasks</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
